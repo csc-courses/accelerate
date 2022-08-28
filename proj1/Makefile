@@ -8,10 +8,34 @@
 #
 #
 
+H= cryptanthus
+H= lutheria
+H= androlepis
+H= orthophytum
 
 L=/usr/local/cuda/bin
-run:
+GIT_NAME= ojo-r
+
+run: hello
+	./hello
+
+test: 
+	make clean
+	make hello
+	./hello > hello.out
+	git add hello.out
+	git commit -m "proj1 submit"
+	git push
+
+git-config:
+	git config --global user.name ${GIT_NAME}
+	git config --global credential.helper store
+
+hello:
 	$L/nvcc hello.cu -o hello
 
+login:
+	ssh $H
+
 clean:
-	-rm hello
+	-rm hello hello.out
