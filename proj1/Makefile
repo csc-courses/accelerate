@@ -14,7 +14,7 @@ H= androlepis
 H= orthophytum
 
 L=/usr/local/cuda/bin
-GIT_NAME= ojo-r
+GIT_NAME= __YOUR_GITHUB_NAME__
 
 run: hello
 	./hello
