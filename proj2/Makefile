@@ -1,4 +1,4 @@
-##
+#
 # accelerate! GPU
 # csc596 (231) fall 2022-2023
 # proj2 makefile
@@ -19,11 +19,8 @@ GIT_NAME= __YOUR_GITHUB_NAME__
 P= vector-mult
 
 VERBOSE= -DIS_VERBOSE
-N_ELEM= -DN_ELEM=7
+N_ELEM= -DN_ELEM=5
 
-all:
-	@echo makefile
-	
 test: 
 	make clean
 	make $P
@@ -33,7 +30,7 @@ $P: $P.cu
 	$L/nvcc ${N_ELEM} ${VERBOSE} -lm -o $P $P.cu
 
 test-mult: $P
-	$L/nvprof ./$P
+	./$P
 
 login:
 	ssh $H
