@@ -1,3 +1,4 @@
 ## project 1
 
-Please see the repository: https://github.com/csc-courses/accelerate-proj1.git
+Please accept the invitation https://classroom.github.com/a/3jqgboOs.
+
