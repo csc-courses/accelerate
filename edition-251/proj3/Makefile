@@ -9,6 +9,15 @@
 #A= sm_35
 A= sm_70
 
+
+H= cryptanthus
+H= lutheria
+H= androlepis
+H= orthophytum
+
+L=/usr/local/cuda/bin
+GIT_NAME= __YOUR_GITHUB_NAME__
+
 P= partial_sum
 
 #VERBOSE= -DIS_VERBOSE
@@ -20,7 +29,7 @@ all:
 	make partial_sum
 
 $P: $P.cu
-	nvcc -arch $A ${N_ELEM} ${VERBOSE} -lm -o $P $P.cu
+	$L/nvcc -arch $A ${N_ELEM} ${VERBOSE} -lm -o $P $P.cu
 
 test: $P
 	./$P 4
