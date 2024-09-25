@@ -1,14 +1,15 @@
 #
-# odd-even sort on a GPU
+# alternation sort on a GPU
 # last-update:
 # 	28 may 2023 -bjr
+#	25 sep 2024 -bjr renamed sort
 #
 #
 
 #A= sm_30
 A= sm_50
 N= 32
-P= odd-even-sort
+P= alternation-sort
 
 all:
 	make test
