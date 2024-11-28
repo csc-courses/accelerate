@@ -1,7 +1,7 @@
 # Accelerate! GPU
 
 
-__Moved to [accelerate-gpu](https://github.com/accelerate-gpu/edition-251)__
+__Moved to [accelerate-gpu](https://github.com/accelerate-gpu/)__
 
 A University of Miami minicourse on GPU progamming. 
 
