@@ -1,5 +1,8 @@
 # Accelerate! GPU
 
+
+__Moved to [githut/accelerate-gpu](https://githup.com/accelerate-gpu/)__
+
 A University of Miami minicourse on GPU progamming. 
 
 - Offered: Fall 2024-2025 (251 semester code)
